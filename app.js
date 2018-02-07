@@ -63,7 +63,7 @@ function Stores (name, minHourlyCust, maxHourlyCust, avgCookCust) {
     },
     this.updatePage = function() {
         const nathan = document.getElementById('list');
-        console.log('this is' + nathan);
+        console.log('this is' + nathan); //THIS METHOD IS WHAT NEEDS THE WORK....I believe
         for (let i = 0; i < this.cookiesArray.length; i++) {
             const newLi = document.createElement('li');
             newLi.textContent = times[i] + this.cookiesArray[i];

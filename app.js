@@ -1,13 +1,6 @@
 'use strict';
 
-// function multiply(num,num2){
-//     const numSum = num + num2;
-//     return (numSum);
-// }
-
-// sum()
-
-
+const times = ['6am: ', '7am: ', '8am: ','9am: ','10am: ','11am: ','12pm: ','1pm: ','2pm: ','3pm: ','4pm: ','5pm: ','6pm: ','7pm: ','8pm: ', 'Total daily cookies: '];
 
 const airPort = {
     minHourlyCust: 23,
@@ -17,66 +10,45 @@ const airPort = {
     // createListItem: function(){
     //     //return li with hourly info
     // }
-    randHourlyCust:
-        function(){
-            const minimum = Math.ceil(this.minHourlyCust);
-            const maximum = Math.floor(this.maxHourlyCust);
-            for (let i = 0; i < 15; i++) {
-                const random = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum; // red = random customers/hour
-                const cooky = (random * this.avgCookCust);  //cooky = random customers x avg-cookies/customer = cookies/hr
-                this.cookiesArray.push(Math.round(cooky));
-            }
-            //NEED TO ADD UP ALL ITEMS IN cookiesArray
-
-            // for (let i = 0; i < this.cookiesArray.length; i++) {
-            //     total += this.cookiesArray[i];
-            //     console.log(total);
-
+    randHourlyCust: function(){
+        const minimum = Math.ceil(this.minHourlyCust);
+        const maximum = Math.floor(this.maxHourlyCust);
+        for (let i = 0; i < 15; i++) {
+            const random = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum; // red = random customers/hour
+            const cooky = (random * this.avgCookCust);  //cooky = random customers x avg-cookies/customer = cookies/hr
+            this.cookiesArray.push(Math.round(cooky));
+            console.log(Math.round(cooky));
         }
+    },
+    updatePage: function() {
+        const nathan = document.getElementById('list');
+        console.log('this is' + nathan);
+        for (let i = 0; i < this.cookiesArray.length; i++) {
+            const newLi = document.createElement('li');
+            newLi.textContent = times[i] + this.cookiesArray[i];
+            console.log('this is' + newLi);
+            nathan.appendChild(newLi);
+        }
+    },
+    totalDailyCookies: function() {
+        let sum = 0; //declare sum OUTSIDE of for loop
+        for (let i = 0; i < this.cookiesArray.length; i++){
+            sum += this.cookiesArray[i];
+        }
+        this.cookiesArray.push(sum); //add sum to end of cookiesArray
 
+    },
 };
-airPort.randHourlyCust();
-console.log(airPort.cookiesArray);
-console.log(airPort.avgCookCust);
-
-// const nathan = {
-
-//     mind: 'critical',
-
-//     body: 'stable',
-
-//     soul: 'serious',
-
-//     brainPower: function(){
-
-//     for (i = 0; i < 6, i ++){
-
-//     alert('This is getting messy' + this.mind + this.body + this.soul);
-
-//     };
-
-//     }
-
-// }
-// console.log(brainPower);
-// const random = (Math.floor(Math.random() * 100));
-// const avgCustDay = ((this.minHourlyCust * this.maxHourlyCust) / 2);
-// const dailyCookies = (avgCustDay * this.AvgCookCust);
-// console.log(dailyCookies);
-// console.log(random);
+airPort.randHourlyCust();  //call randHourlyCust
+airPort.totalDailyCookies(); //
+airPort.updatePage();
 
 
 
 
 
-// //sing is a function expression
-// const thirdSong = {
-//     title: 'Freebird',
-//     lyrics: 'idk x alkdfjalskdjlkj',
-//     length: 800,
-//     isFavorite: false,
-//     sing: function() {
-//         /* Accessing its own properties with the all dreaded *this* */
-//         alert('This is freebird singing');
-//         console.log(this);
+
+
+
+
 

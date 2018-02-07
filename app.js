@@ -247,11 +247,23 @@ const powellsStore = new Stores('Powells Store', 11, 38, 3.7);
 const stJohnsStore = new Stores('St. Johns Store', 20, 38, 2.3);
 const waterFront = new Stores('Waterfront Store', 2, 16, 4.6);
 
-airport.updatePage();
+
+// airport.randHourlyCust();
+// airport.totalDailyCookies();
+// airport.updatePage();
+// pioneerSquare.randHourlyCust();
+// pioneerSquare.totalDailyCookies();
 // pioneerSquare.updatePage();
+// powellsStore.randHourlyCust();
+// powellsStore.totalDailyCookies();
 // powellsStore.updatePage();
+// stJohnsStore.randHourlyCust();
+// stJohnsStore.totalDailyCookies();
 // stJohnsStore.updatePage();
+// waterFront.randHourlyCust();
+// waterFront.totalDailyCookies();
 // waterFront.updatePage();
+
 console.log('poop');
 
 

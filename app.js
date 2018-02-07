@@ -51,47 +51,55 @@ function Stores (name, minHourlyCust, maxHourlyCust, avgCookCust) {
     this.maxHourlyCust = maxHourlyCust;
     this.avgCookCust = avgCookCust;
     this.cookiesArray = [];
-    this.randHourlyCust = function(){
-        const minimum = Math.ceil(this.minHourlyCust);
-        const maximum = Math.floor(this.maxHourlyCust);
-        for (let i = 0; i < 15; i++) {
-            const random = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum; // red = random customers/hour
-            const cooky = (random * this.avgCookCust);  //cooky = random customers x avg-cookies/customer = cookies/hr
-            this.cookiesArray.push(Math.round(cooky));
-            console.log(Math.round(cooky));
-        }
-    },
-    this.updatePage = function() {
-        const nathan = document.getElementById('list');
-        console.log('this is' + nathan); //THIS METHOD IS WHAT NEEDS THE WORK....I believe
-        for (let i = 0; i < this.cookiesArray.length; i++) {
-            const newLi = document.createElement('li');
-            newLi.textContent = times[i] + this.cookiesArray[i];
-            console.log('this is' + newLi);
-            nathan.appendChild(newLi);
-        }
-    },
-    this.totalDailyCookies = function() {
-        let sum = 0; //declare sum OUTSIDE of for loop
-        for (let i = 0; i < this.cookiesArray.length; i++){
-            sum += this.cookiesArray[i];
-        }
-        this.cookiesArray.push(sum); //add sum to end of cookiesArray
-    };
-};
 
-Stores.prototype.createLi = function () {
-    const li = document.createElement('li');
-    li.textContent = 'this.';
+}
+
+Stores.prototype.updatePage = function () {
+    const nathan = document.getElementById('list');
+    for (let i = 0; i < this.cookiesArray.length; i++) {
+        const newLi = document.createElement('li');
+        newLi.textContent = times[i] + this.cookiesArray[i];
+        console.log('This is' + this.li);
+        nathan.appendChild(newLi);
+    };
+},
+Stores.prototype.totalDailyCookies = function() {
+    let sum = 0;
+    for (let i = 0; i < this.cookiesArray.length; i++){
+        sum += this.cookiesArray[i];
+    }
+    this.cooiesArray.push(sum);
+},
+
+Stores.prototype.randHourlyCust = function() {
+    const minimum = Math.ceil(this.minHourlyCust);
+    const maximum = Math.floor(this.maxHourlyCust);
+    for (let i = 0; i < 15; i++) {
+        const random = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+        const cooky = (random * this.avgCookCust);
+        this.cookiesArray.push(Math.round(cooky));
+    }
 };
 
 const airport = new Stores('Airport', 23, 65, 6.3);
 const pioneerSquare = new Stores('Pioneer Square', 3, 24, 1.2);
+const 
 
 
 
 
 
+
+// randHourlyCust: function(){
+//         const minimum = Math.ceil(this.minHourlyCust);
+//         const maximum = Math.floor(this.maxHourlyCust);
+//         for (let i = 0; i < 15; i++) {
+//             const random = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum; // red = random customers/hour
+//             const cooky = (random * this.avgCookCust);  //cooky = random customers x avg-cookies/customer = cookies/hr
+//             this.cookiesArray.push(Math.round(cooky));
+//             console.log(Math.round(cooky));
+//         }
+//     },
 
 
 

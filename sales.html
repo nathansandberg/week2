@@ -3,6 +3,7 @@
 <html>
 <head>
     <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Holy Moly</title>
 </head>
 
 
@@ -13,13 +14,35 @@
 <h1>Salmon Cookie Sales Per Store</h1>
 <table id ="table"> 
     <thead id = "header"> </thead>
-    <tfoot>
+    <!-- <tfoot>
         <tr>
             <td colspan = "17">Pat's note: Good God these people eat alot of cookies!</td>
         </tr>
 
-    </tfoot>
+    </tfoot> -->
 </table>
+
+
+<form id ="form1">
+    <fieldset>
+        <legend>Create New Store</legend>
+
+        <label for="newstore">Enter Store</label>
+        <input type="text" name="enter-store" id="newstore">
+        
+        <label for="mincust">Minimum Daily Customers</label>
+        <input type="number" name="min-cust" id="mincust">
+
+        <label for="maxcust">Maximum Daily Customers</label>
+        <input type="number" name="max-cust" id="maxcust">
+
+        <label for="avgsales">Average Cookie Sales</label>
+        <input type="number" name="avg-sales" id="avgsales">
+
+        <button type="submit" form="form1" id="textbutton">PusH</button> 
+    </fieldset>
+</form>
+
 
   
   

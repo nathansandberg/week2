@@ -15,3 +15,22 @@ img {
     left: 250px;
    
 }
+
+thead{
+    background-color: lightblue;
+}
+
+td{
+background-color: lightseagreen;
+padding: 10px;
+margin: 10px;
+
+}
+
+table{ 
+    display: inline-block;
+    position: relative;
+    left: 200px;
+    margin-top: 100px;
+    
+}

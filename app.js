@@ -92,6 +92,27 @@ waterFront.renderRow();
 
 console.log('poop');
 
+const form = document.querySelector('form');
 
+form.addEventListener('submit', function(){
+    event.preventDefault();
+
+    console.log('consoles on submit');
+
+    const name = document.getElementById('newstore').value;
+    console.log('this is the new store:' + name);
+
+    const min = this.mincust.value;
+    console.log(min);
+
+    const max = this.maxcust.value;
+    console.log(max);
+
+    const acs = this.avgsales.value;
+    console.log(acs);
+
+    const newStore = new Stores(name, min, max, acs);
+    newStore.renderRow();
+});
 
 

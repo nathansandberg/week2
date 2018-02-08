@@ -96,23 +96,30 @@ const form = document.querySelector('form');
 
 form.addEventListener('submit', function(){
     event.preventDefault();
+   
 
+    //test
     console.log('consoles on submit');
-
+    //test works!
     const name = document.getElementById('newstore').value;
     console.log('this is the new store:' + name);
 
-    const min = this.mincust.value;
+    const min = document.getElementById('mincust').value;
     console.log(min);
 
-    const max = this.maxcust.value;
+    const max = document.getElementById('maxcust').value;
     console.log(max);
-
+    //const max uses getElementByID adn const acs does the same thing.
+    //getElementById is easier to follow. Not changing const acs to 
+    //remind myself later
     const acs = this.avgsales.value;
     console.log(acs);
 
     const newStore = new Stores(name, min, max, acs);
+    newStore.randHourlyCust();
+    newStore.totalDailyCookies();
     newStore.renderRow();
+    form.reset();
 });
 
 

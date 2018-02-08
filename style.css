@@ -25,12 +25,19 @@ img {
 
 fieldset {
     position: relative;
-    width: 1200px;
+    width: 200px;
+    height: 200px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     
     background-color: lavender;
+}
+
+input {
+display: block;
+margin: 15px;
+
 }
 
 thead{

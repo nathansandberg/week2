@@ -1,0 +1,44 @@
+body{
+    background-color:lightcoral;
+}
+li {
+    /* display: inline-block; */
+    border: 1px solid black;
+    margin: 2px;
+    padding: 2px;
+    width: 100px;
+
+}
+h1{
+    display: inline-block;
+    position: relative;
+    margin-left: 450px;
+    margin-top:50px;
+  
+}
+
+img {
+    position: relative;
+    left: 250px;
+   
+}
+
+thead{
+    background-color: lightblue;
+}
+
+
+td{
+background-color: lightseagreen;
+padding: 10px;
+margin: 10px;
+
+}
+
+table{ 
+    display: inline-block;
+    position: relative;
+    left: 200px;
+    margin-top: 50px;
+    
+}

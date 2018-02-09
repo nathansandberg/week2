@@ -52,10 +52,54 @@ h1{
 
 }
 
-img {
+#fish{
+    position: relative;
+    
+    width: 400px;
+    
+}
+/* 
+#phish {
     position: relative;
     left: 250px;
    
+} */
+
+#box1, #box2, #box3{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    float: left;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:#dcedc1;
+}
+
+#cutter{
+border-radius: 50%;
+
+}
+#cutter, #family, #frosted,{
+position: relative;
+left:60px;
+border: 1px solid black;
+border-radius: 10px;
+}
+
+figcaption{
+    position: relative;
+    left:50px;
+    margin: 1px;
+    width:200px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    font-size: 10px;
+    padding: 5px;
+}
+p {
+padding: 20px;
+
 }
 
 fieldset {
@@ -65,15 +109,18 @@ fieldset {
     height: 200px;
     margin-top: 10px;
     margin-left: 30px;
-    margin-right: auto;
+    margin-right: 30px;
     border-radius: 10px;
     background-color:#ff8b94;
+    border: 1px solid black;
     
 }
 
 legend{
-    border: 1px solid red;
+    border: 1px solid black;
+    border-radius: 10px;
     background-color:#dcedc1;
+    padding: 10px;
   
 }
 input {
@@ -84,6 +131,9 @@ margin: 15px;
 
 button {
     background-color: #a8e6cf;
+    border:1px solid black;
+    border-radius: 10px;
+    
 }
 
 
@@ -108,4 +158,11 @@ table{
     padding: 20px;
     
     
+}
+
+h2{
+position: relative;
+width: 200px;
+left: 100px;
+
 }

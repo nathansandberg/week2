@@ -96,7 +96,7 @@ const form = document.querySelector('form');
 
 form.addEventListener('submit', function(){
     event.preventDefault();
-   
+
 
     //test
     console.log('consoles on submit');
@@ -110,7 +110,7 @@ form.addEventListener('submit', function(){
     const max = document.getElementById('maxcust').value;
     console.log(max);
     //const max uses getElementByID adn const acs does the same thing.
-    //getElementById is easier to follow. Not changing const acs to 
+    //getElementById is easier to follow. Not changing const acs to
     //remind myself later
     const acs = this.avgsales.value;
     console.log(acs);

@@ -1,5 +1,9 @@
+/* font-family: 'Source Serif Pro', serif;
+font-family: 'Pontano Sans', sans-serif; */
+
 body{
-    background-color:lightcoral;
+    background-color:#ffaaa5;
+    font-family: 'Source Serif Pro', serif;
 }
 li {
     /* display: inline-block; */
@@ -12,9 +16,40 @@ li {
 h1{
     display: inline-block;
     position: relative;
+    margin-left: 375px;
+    margin-top:50px;
+    border-radius: 10px;
+    border: 1px dotted black;
+    background-color: #ff8b94;
+    padding: 10px 80px;
+    font-family: 'Source Serif Pro', serif;
+
+}
+
+#instructions{
+    display: inline-block;
+    position: relative;
+    left: 450px;
+    margin-top: 50px;
+    width: 300px;
+    background-color: #decdc1;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+#page-title {
+    display: inline-block;
+    position: relative;
     margin-left: 450px;
     margin-top:50px;
-  
+    border-radius: 10px;
+    border: 1px dotted black;
+    background-color:#ff8b94;
+    padding: 10px 80px;
+    font-family:'Source Serif Pro', serif;
+
 }
 
 img {
@@ -25,37 +60,52 @@ img {
 
 fieldset {
     position: relative;
+    display: inline-block;
     width: 200px;
     height: 200px;
-    margin-top: 50px;
-    margin-left: auto;
+    margin-top: 10px;
+    margin-left: 30px;
     margin-right: auto;
+    border-radius: 10px;
+    background-color:#ff8b94;
     
-    background-color: lavender;
 }
 
+legend{
+    border: 1px solid red;
+    background-color:#dcedc1;
+  
+}
 input {
+    background-color:#ffd3b6;
 display: block;
 margin: 15px;
-
 }
 
-thead{
-    background-color: lightblue;
+button {
+    background-color: #a8e6cf;
 }
 
 
 td{
-background-color: lightseagreen;
+font-family:'Pontano Sans', sans-serif;
+background-color: #dcedc1;
 padding: 10px;
 margin: 10px;
+border: 1px dotted black;
+border-radius: 10px;
 
 }
 
 table{ 
-    display: inline-block;
-    position: relative;
-    left: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:#a8e6cf;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
+    padding: 20px;
+    
     
 }

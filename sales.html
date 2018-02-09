@@ -3,45 +3,60 @@
 <html>
 <head>
     <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans|Source+Serif+Pro" rel="stylesheet">
     <title>Holy Moly</title>
 </head>
 
 
 <body>
+
+    <h1 id="page-title">Pats Cookie Stand</h1>
+
     <img src ='salmon.png'alt = 'fish'>
   
     
-<h1>Salmon Cookie Sales Per Store</h1>
-<table id ="table"> 
-    <thead id = "header"> </thead>
-    <!-- <tfoot>
-        <tr>
-            <td colspan = "17">Pat's note: Good God these people eat alot of cookies!</td>
-        </tr>
+    <h1>Salmon Cookie Sales Per Store</h1>
 
-    </tfoot> -->
-</table>
+    <table id ="table"> 
+        <thead id = "header"> </thead>
+    </table>
+
+    <section id="instructions">
+        <h2>Employees Please Note:</h2>
+        <p>1. When entering new store information:<br>
+            Please double check your entries as
+            they are <strong>uneditable<strong> once submitted.<br>
+            <br>
+            2. Pat and I really appreciate all the great work 
+            you do on a daily basis. We wouldn't be creating 
+            new stores without your hard work!!
+        </p>
 
 
-<form id ="form1">
-    <fieldset>
-        <legend>Create New Store</legend>
 
-        <label for="newstore"></label>
-        <input type="text" name="enter-store" id="newstore" placeholder="enter new store">
-        
-        <label for="mincust"></label>
-        <input type="number" name="min-cust" id="mincust" placeholder="min daily customers">
+            <form id ="form1">
+                    <fieldset>
+                        <legend>Create New Store</legend>
+            
+                        <label for="newstore"></label>
+                        <input type="text" name="enter-store" id="newstore" placeholder="enter new store">
+                    
+                        <label for="mincust"></label>
+                        <input type="number" name="min-cust" id="mincust" placeholder="min daily customers">
+            
+                        <label for="maxcust"></label>
+                        <input type="number" name="max-cust" id="maxcust" placeholder="max daily customers">
+            
+                        <label for="avgsales"></label>
+                        <input type="number" name="avg-sales" id="avgsales" placeholder="avg hourly sales">
+            
+                        <button type="submit" form="form1" id="textbutton">PusH</button> 
+                    </fieldset>
+                </form>
 
-        <label for="maxcust"></label>
-        <input type="number" name="max-cust" id="maxcust" placeholder="max daily customers">
+    </section>
 
-        <label for="avgsales"></label>
-        <input type="number" name="avg-sales" id="avgsales" placeholder="avg hourly sales">
-
-        <button type="submit" form="form1" id="textbutton">PusH</button> 
-    </fieldset>
-</form>
+    
 
 
   

@@ -41,6 +41,8 @@ Stores.prototype.renderRow = function(){
     const table = document.getElementById('table');
     const row = document.createElement('tr');
     table.appendChild(row);
+
+    //computer tranlates line 41-43 into: document.getElementById('table).appendChild(document.createElement('tr'))//
     for (let i = 0; i < this.cookiesArray.length; i++){
         const cell = document.createElement('td');
         cell.textContent = this.cookiesArray[i];

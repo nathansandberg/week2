@@ -17,15 +17,19 @@ li {
 
 #nav li {
     display: inline;
+    position: relative;
+    top: 25px;
     border: none;
     font-family: 'Source Serif Pro', serif;
+    font-size: 20px;
     margin: 120px;
-
-    
 }
 nav {
+    position: relative;
     background-color:#a8e6cf;
     height: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
 
 }
 h1{
@@ -46,7 +50,7 @@ h1{
     position: relative;
     left: 450px;
     margin-top: 50px;
-    width: 300px;
+    width: 350px;
     background-color: #decdc1;
     border: 1px solid black;
     border-radius: 10px;
@@ -66,7 +70,14 @@ h1{
 
 }
 
+#google{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
 #threeboxes {
+    position: relative;
     margin-top: 75px;
 }
 
@@ -74,15 +85,23 @@ h1{
    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    margin-top: 50px;
+   
     
 }
-/* 
+
 #phish {
-    position: relative;
-    left: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
    
-} */
+}
+#frosted {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #box1, #box2, #box3{
     position: relative;
@@ -95,13 +114,19 @@ h1{
     background-color:#dcedc1;
 }
 
-#cutter{
+/* #cutter{
+display: block;
+position: relative;
+margin-left: auto;
+margin-right: auto;
 border-radius: 50%;
 
-}
-#cutter, #family, #frosted,{
+} */
+#cutter, #family, #frosted{
 position: relative;
-left:60px;
+display: block;
+margin-left: auto;
+margin-right: auto;
 border: 1px solid black;
 border-radius: 10px;
 }
@@ -134,8 +159,13 @@ fieldset {
     border: 1px solid black;
     
 }
-
+fieldset button{
+    position: relative;
+    bottom: 8px;
+    left: 150px;
+}
 legend{
+    position: relative;
     border: 1px solid black;
     border-radius: 10px;
     background-color:#dcedc1;
@@ -181,7 +211,7 @@ table{
 
 h2{
 position: relative;
-width: 200px;
-left: 100px;
+width: 300px;
+left: 50px;
 
 }

@@ -41,6 +41,8 @@ Stores.prototype.renderRow = function(){
     const table = document.getElementById('table');
     const row = document.createElement('tr');
     table.appendChild(row);
+
+    //computer tranlates line 41-43 into: document.getElementById('table).appendChild(document.createElement('tr'))//
     for (let i = 0; i < this.cookiesArray.length; i++){
         const cell = document.createElement('td');
         cell.textContent = this.cookiesArray[i];
@@ -96,7 +98,7 @@ const form = document.querySelector('form');
 
 form.addEventListener('submit', function(){
     event.preventDefault();
-   
+
 
     //test
     console.log('consoles on submit');
@@ -110,7 +112,7 @@ form.addEventListener('submit', function(){
     const max = document.getElementById('maxcust').value;
     console.log(max);
     //const max uses getElementByID adn const acs does the same thing.
-    //getElementById is easier to follow. Not changing const acs to 
+    //getElementById is easier to follow. Not changing const acs to
     //remind myself later
     const acs = this.avgsales.value;
     console.log(acs);

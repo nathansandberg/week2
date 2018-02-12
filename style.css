@@ -78,6 +78,21 @@ nav {
 #title3 {
     position: relative;
     width: 260px;
+    font-size: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:50px;
+    border-radius: 10px;
+    border: 1px dotted black;
+    background-color:#ff8b94;
+    padding: 10px;
+    font-family:'Source Serif Pro', serif;
+
+} 
+#title4 {
+    position: relative;
+    width: 190px;
+    font-size: 32px;
     margin-left: auto;
     margin-right: auto;
     margin-top:50px;
@@ -218,6 +233,7 @@ padding: 10px;
 margin: 10px;
 border: 1px dotted black;
 border-radius: 10px;
+color: darkblue;
 
 }
 
@@ -236,14 +252,23 @@ table{
 
 h2{
 position: relative;
+color: rgb(58, 52, 52);
 width: 300px;
 left: 50px;
 
 }
 
-/* footer {
-    width: 300px;
-    height: 40px;
+aside{
+    line-height: 40px;
+    background-color:#a8e6cf;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 650px;
+}
 
+/* footer {
+    position: relative;
+    height: 40px;
+    width: 100%;
     background-color: #a8e6cf;
 } */
